@@ -9,6 +9,9 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			screens: {
+				'query-470px': '470px', // Breakpoint para telas menores que 470px
+			  },
 			colors: {
 				'bg-light': '#F5F5F5',
 				'text-dark': '#2F4F4F',
