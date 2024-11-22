@@ -16,7 +16,7 @@ const config: Config = {
 				'bg-light': '#F5F5F5',
 				'text-dark': '#2F4F4F',
 				'bg-white': '#FFFFFF',
-				'text-indigo': '#4B0082',
+				'deep-indigo': '#4B0082',
 				'text-dark-grey': '#555555',
 				'bg-dodger-blue': '#1E90FF',
 				'text-white': '#FFFFFF',
