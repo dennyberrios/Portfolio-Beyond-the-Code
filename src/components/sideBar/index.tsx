@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Header = () => {
     return (
-        <div className="bg-header-gradient text-white w-full lg:px-24 max-lg:px-24 max-md:px-5 py-6">
+        <div className="bg-header-gradient font-arial text-white w-full lg:px-24 max-lg:px-24 max-md:px-5 py-6">
             <div className="flex justify-between items-center w-full flex-wrap max-query-470px:justify-center max-query-470px:flex-col gap-2">
-                <p className="font-bold font-roboto lg:text-3xl max-lg:text-2xl max-sm:text-lg">
+                <p className="font-bold lg:text-3xl max-lg:text-2xl max-sm:text-lg">
                     Beyond the Code
                 </p>
                 <nav>

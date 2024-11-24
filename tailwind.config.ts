@@ -6,30 +6,24 @@ const config: Config = {
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/screens/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
 		extend: {
 			screens: {
 				'query-470px': '470px', // Breakpoint para telas menores que 470px
-			  },
+			},
 			colors: {
-				'bg-light': '#F5F5F5',
-				'text-dark': '#2F4F4F',
-				'bg-white': '#FFFFFF',
+				'light-bg': '#F5F5F5',
+				'dark-text': '#2F4F4F',
 				'deep-indigo': '#4B0082',
-				'text-dark-grey': '#555555',
-				'bg-dodger-blue': '#1E90FF',
-				'text-white': '#FFFFFF',
-				'bg-indigo': '#4B0082',
-				'text-golden-yellow': '#F0E68C',
-				'bg-tomato-red': '#FF6347',
-				'bg-light-grey': '#F4F4F9',
-				'text-light-blue': '#3A3D98',
-				'bg-blog-light': '#F5F5F5',
-				'text-blog-blue': '#1E90FF',
-				'footer-bg': '#4B0082',
-				'footer-text': '#F5F5F5',
-				'footer-link': '#32CD32',
+				'dark-grey': '#555555',
+				'dodger-blue': '#1E90FF',
+				'golden-yellow': '#F0E68C',
+				'tomato-red': '#FF6347',
+				'light-grey': '#F4F4F9',
+				'light-blue': '#3A3D98',
+				'lime-green': '#32CD32',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				card: {
@@ -78,6 +72,9 @@ const config: Config = {
 			},
 			backgroundImage: {
 				'header-gradient': 'linear-gradient(to right, #1E90FF, #4B0082)',
+			},
+			fontFamily: {
+				arial: ['Arial', 'sans-serif'],
 			},
 		}
 	},
