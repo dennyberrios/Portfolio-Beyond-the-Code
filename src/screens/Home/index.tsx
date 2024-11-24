@@ -12,8 +12,8 @@ const HomePage = () => {
                     Explore meus projetos, descubra como utilizo tecnologias inovadoras para resolver desafios e conheça minha trajetória no desenvolvimento de aplicações que unem design, performance e usabilidade.
                 </p>
             </section>
-            <section className="bg-dodger-blue w-full text-center">
-                <h2 className="lg:text-4xl max-lg:text-4xl max-sm:text-2xl font-black text-white mb-5 py-2">Meus Projetos</h2>
+            <section className="bg-dodger-blue w-full text-center px-5 py-10">
+                <h2 className="lg:text-4xl max-lg:text-4xl max-sm:text-2xl font-black text-white mb-5">Meus Projetos</h2>
             </section>
         </>
     );
