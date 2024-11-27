@@ -33,6 +33,7 @@ import IconNotion from "@/assets/icon/Notion-Dark.svg";
 import IconFigma from "@/assets/icon/Figma-Dark.svg";
 import IconAxios from "@/assets/icon/axios.svg";
 import IconJwt from "@/assets/icon/jwt.svg";
+import IconIntellij from "@/assets/icon/intellij.svg";
 
 const HomePage = () => {
   return (
@@ -214,6 +215,11 @@ const HomePage = () => {
             key={23}
             image={IconEclipse}
             title="Eclipse"
+          />
+          <TechnologyCard
+            key={23}
+            image={IconIntellij}
+            title="Intellij"
           />
         </div>
         <h3 className="lg:text-2xl max-lg:text-xl max-sm:text-xl font-black text-dark-grey mb-5 mt-9">Sistemas Operacionais</h3>
