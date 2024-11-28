@@ -34,6 +34,7 @@ import IconFigma from "@/assets/icon/Figma-Dark.svg";
 import IconAxios from "@/assets/icon/axios.svg";
 import IconJwt from "@/assets/icon/jwt.svg";
 import IconIntellij from "@/assets/icon/intellij.svg";
+import BlogCard from "@/components/BlogCard";
 
 const HomePage = () => {
   return (
@@ -302,6 +303,51 @@ const HomePage = () => {
             key={37}
             image={IconTs}
             title="TypeScript"
+          />
+        </div>
+      </section>
+      <section className="bg-white w-full px-5 py-20">
+        <h2 className="lg:text-4xl max-lg:text-3xl max-sm:text-2xl font-black text-deep-indigo text-center mb-5">Blog</h2>
+        <div className="flex flex-wrap gap-5 justify-center">
+          <BlogCard
+            key={1}
+            title="Título do Post 1"
+            description="Resumo do conteúdo do primeiro post, falando sobre tecnologias ou tendências do momento."
+          />
+          <BlogCard
+            key={2}
+            title="Título do Post 2"
+            description="Resumo do conteúdo do segundo post, abordando um tema relevante na área de desenvolvimento."
+          />
+          <BlogCard
+            key={2}
+            title="Título do Post 2"
+            description="Resumo do conteúdo do segundo post, abordando um tema relevante na área de desenvolvimento."
+          />
+          <BlogCard
+            key={2}
+            title="Título do Post 2"
+            description="Resumo do conteúdo do segundo post, abordando um tema relevante na área de desenvolvimento."
+          />
+          <BlogCard
+            key={2}
+            title="Título do Post 2"
+            description="Resumo do conteúdo do segundo post, abordando um tema relevante na área de desenvolvimento."
+          />
+          <BlogCard
+            key={2}
+            title="Título do Post 2"
+            description="Resumo do conteúdo do segundo post, abordando um tema relevante na área de desenvolvimento."
+          />
+          <BlogCard
+            key={2}
+            title="Título do Post 2"
+            description="Resumo do conteúdo do segundo post, abordando um tema relevante na área de desenvolvimento."
+          />
+          <BlogCard
+            key={2}
+            title="Título do Post 2"
+            description="Resumo do conteúdo do segundo post, abordando um tema relevante na área de desenvolvimento."
           />
         </div>
       </section>
