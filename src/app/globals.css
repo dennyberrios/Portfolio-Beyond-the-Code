@@ -6,14 +6,63 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.imageBackground {
-  background-image: url("./../assets/img/welcome.jpg");
-  background-attachment: fixed;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.backgroundMod {
+  height: calc(100vh - 84px);
 }
+
+/* .backgroundModt {
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #1E90FF, #4B0082);
+  overflow: hidden;
+}
+
+.backgroundModt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent 60%);
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.backgroundModt::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  width: 120%;
+  height: 120px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.decorative-shape {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.decorative-shape.shape-1 {
+  width: 200px;
+  height: 200px;
+  top: -50px;
+  left: -50px;
+}
+
+.decorative-shape.shape-2 {
+  width: 200px;
+  height: 200px;
+  bottom: -40px;
+  right: -40px;
+} */
 
 @layer utilities {
   .text-balance {

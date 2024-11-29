@@ -36,10 +36,11 @@ import IconJwt from "@/assets/icon/jwt.svg";
 import IconIntellij from "@/assets/icon/intellij.svg";
 import BlogCard from "@/components/BlogCard";
 
+
 const HomePage = () => {
   return (
     <>
-      <section className="h-screen flex justify-center items-center flex-col text-center px-5 py-20 lg:w-10/12 max-lg:w-10/12 max-sm:w-11/12">
+      <section className="flex justify-center items-center flex-col text-center px-5 py-20 lg:w-10/12 max-lg:w-10/12 max-sm:w-11/12 backgroundMod">
         <h2 className="lg:text-4xl max-lg:text-3xl max-sm:text-2xl font-black text-deep-indigo mb-5">Bem-vindo ao meu portfólio!</h2>
         <p className="text-dark-grey lg:text-xl max-lg:text-lg max-sm:text-base">
           Olá! Sou um desenvolvedor front-end apaixonado por criar experiências digitais imersivas e de fácil navegação. Ao longo da minha jornada, venho transformando ideias em interfaces modernas, acessíveis e funcionais, sempre com o objetivo de entregar soluções que encantam e engajam os usuários.

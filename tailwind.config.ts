@@ -71,7 +71,8 @@ const config: Config = {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			backgroundImage: {
-				'header-gradient': 'linear-gradient(to right, #1E90FF, #4B0082)',
+				'primary-gradient': 'linear-gradient(to right, #1E90FF, #4B0082)',
+				'accent-gradient': 'linear-gradient(135deg, #1E90FF, #4B0082)',
 			},
 			fontFamily: {
 				arial: ['Arial', 'sans-serif'],
