@@ -24,6 +24,8 @@ const config: Config = {
 				'light-grey': '#F4F4F9',
 				'light-blue': '#3A3D98',
 				'lime-green': '#32CD32',
+				'light-indigo': '#6C63FF',
+				'dark-blue-gray': '#2B2D42',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				card: {

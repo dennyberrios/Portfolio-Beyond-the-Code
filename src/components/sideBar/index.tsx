@@ -12,22 +12,22 @@ const Header = () => {
                 <nav>
                     <ul className="flex gap-5 lg:text-base max-lg:text-sm max-sm:text-xs font-medium ">
                         <li>
-                            <Link href="#projects" className="hover:text-lime-green transition duration-200 ease-in-out">
+                            <Link href="/" className="hover:text-lime-green transition duration-200 ease-in-out">
                                 Projetos
                             </Link>
                         </li>
                         <li>
-                            <Link href="/pages/about-me" className="hover:text-lime-green transition duration-200 ease-in-out">
+                            <Link href="/pages/about" className="hover:text-lime-green transition duration-200 ease-in-out">
                                 Sobre Mim
                             </Link>
                         </li>
                         <li>
-                            <Link href="#blog" className="hover:text-lime-green transition duration-200 ease-in-out">
+                            <Link href="/" className="hover:text-lime-green transition duration-200 ease-in-out">
                                 Blog
                             </Link>
                         </li>
                         <li>
-                            <Link href="#contact" className="hover:text-lime-green transition duration-200 ease-in-out">
+                            <Link href="/" className="hover:text-lime-green transition duration-200 ease-in-out">
                                 Contato
                             </Link>
                         </li>
