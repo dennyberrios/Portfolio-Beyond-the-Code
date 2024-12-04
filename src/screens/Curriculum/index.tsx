@@ -29,7 +29,7 @@ const CurriculumPage = () => {
     return (
         <>
             <section className="bg-dodger-blue w-full px-5 py-20">
-                <h2 className="lg:text-4xl max-lg:text-3xl max-sm:text-2xl font-black text-deep-indigo text-center mb-10">Dominnio tecnico</h2>
+                <h2 className="lg:text-4xl max-lg:text-3xl max-sm:text-2xl font-black text-white text-center mb-10">Dominnio tecnico</h2>
                 <div className="flex items-start gap-12 justify-center flex-wrap">
                     <div className="w-3/6 flex flex-col items-center">
                         <Image src={CurriculoPgOne} alt="Imagem do currículo" className="rounded-lg" />
