@@ -10,10 +10,10 @@ const Header = () => {
                     Beyond the Code
                 </p>
                 <nav>
-                    <ul className="flex gap-5 lg:text-base max-lg:text-sm max-sm:text-xs font-medium ">
+                    <ul className="flex flex-wrap gap-5 lg:text-base max-lg:text-sm max-sm:text-xs font-medium ">
                         <li>
                             <Link href="/" className="hover:text-lime-green transition duration-200 ease-in-out">
-                                Projetos
+                                Início
                             </Link>
                         </li>
                         <li>
@@ -29,6 +29,11 @@ const Header = () => {
                         <li>
                             <Link href="/" className="hover:text-lime-green transition duration-200 ease-in-out">
                                 Contato
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/pages/curriculum"} className="hover:text-lime-green transition duration-200 ease-in-out">
+                                Currículo
                             </Link>
                         </li>
                     </ul>

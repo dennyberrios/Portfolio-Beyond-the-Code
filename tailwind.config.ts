@@ -74,7 +74,6 @@ const config: Config = {
 			},
 			backgroundImage: {
 				'primary-gradient': 'linear-gradient(to right, #1E90FF, #4B0082)',
-				'accent-gradient': 'linear-gradient(135deg, #1E90FF, #4B0082)',
 			},
 			fontFamily: {
 				arial: ['Arial', 'sans-serif'],
