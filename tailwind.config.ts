@@ -26,6 +26,11 @@ const config: Config = {
 				'lime-green': '#32CD32',
 				'light-indigo': '#6C63FF',
 				'dark-blue-gray': '#2B2D42',
+				'vivid-pink': '#E1306C',
+				'crimson-red': '#D14836',
+				'bright-blue': '#1A73E8',
+				'linkedin-blue': '#0A66C2',
+				'whatsapp-green': '#25D366',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				card: {

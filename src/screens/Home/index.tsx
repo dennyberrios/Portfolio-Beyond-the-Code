@@ -2,6 +2,7 @@
 
 import ProjectCard from "@/components/ProjectCard";
 import TechnologyCard from "@/components/TechnologyCard";
+import BlogCard from "@/components/BlogCard";
 
 import IconCSS from "@/assets/icon/CSS.svg";
 import IconHTML from "@/assets/icon/HTML.svg";
@@ -34,7 +35,6 @@ import IconFigma from "@/assets/icon/Figma-Dark.svg";
 import IconAxios from "@/assets/icon/axios.svg";
 import IconJwt from "@/assets/icon/jwt.svg";
 import IconIntellij from "@/assets/icon/intellij.svg";
-import BlogCard from "@/components/BlogCard";
 import ProjectCarPolice from "@/assets/gifs/viatura-da-policia.gif";
 import ProjectPost from "@/assets/gifs/poste.gif";
 import ProjectStudyPlan from "@/assets/img/plano-de-estudos.png";

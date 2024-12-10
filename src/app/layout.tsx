@@ -18,7 +18,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Beyond the Code - Portfólio",
-description: "Explore o portfólio 'Beyond the Code' de Danny Berrios, destacando projetos inovadores, design moderno e soluções front-end criativas com foco na experiência do usuário."
+  description: "Explore o portfólio 'Beyond the Code' de Danny Berrios, destacando projetos inovadores, design moderno e soluções front-end criativas com foco na experiência do usuário."
 };
 
 export default function RootLayout({
@@ -32,7 +32,9 @@ export default function RootLayout({
         `min-h-screen bg-light-bg font-sans ${geistSans.variable} ${geistMono.variable} antialiased`
       )}>
         <Header />
-        {children}
+        <main className="font-arial flex justify-center items-center flex-col">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
