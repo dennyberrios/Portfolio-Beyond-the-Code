@@ -31,11 +31,8 @@ const config: Config = {
 				'bright-blue': '#1A73E8',
 				'linkedin-blue': '#0A66C2',
 				'whatsapp-green': '#25D366',
-<<<<<<< HEAD
-=======
 				'deep-slate': '#3C3E53',
 
->>>>>>> 46ece3f ( Adicionando atualizações no Contato)
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				card: {

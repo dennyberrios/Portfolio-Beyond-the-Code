@@ -1,12 +1,6 @@
 'use client'
 
-<<<<<<< HEAD
-import { InputDemo } from "@/components/Input";
-import { TextareaDemo } from "@/components/Textarea";
-import { Button } from "@/components/ui/button";
-=======
 import FormContact from "@/components/FormeContact";
->>>>>>> 46ece3f ( Adicionando atualizações no Contato)
 import { BiLogoGmail } from "react-icons/bi";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
@@ -15,15 +9,9 @@ import { RiLinkedinFill } from "react-icons/ri";
 const ContactPage = () => {
     return (
         <>
-<<<<<<< HEAD
-            <h1 className="text-deep-indigo text-5xl font-bold mt-20 pb-5">Entre em Contato</h1>
-            <p className="text-dark-grey text-xl mb-5">Estou sempre aberto a novas oportunidades e parcerias. Conecte-se comigo nas redes sociais ou envie uma mensagem.</p>
-            <section className="flex gap-5 py-5">
-=======
             <h1 className="lg:text-4xl max-lg:text-3xl max-sm:text-2xl font-black text-deep-indigo mt-20 pb-5">Entre em Contato</h1>
             <p className="text-dark-grey lg:text-xl max-lg:text-lg max-sm:text-base mb-5">Estou sempre aberto a novas oportunidades e parcerias. Conecte-se comigo nas redes sociais ou envie uma mensagem.</p>
             <section className="flex gap-5 py-10 mb-10">
->>>>>>> 46ece3f ( Adicionando atualizações no Contato)
                 <a href="https://www.instagram.com/berrios_danny30/" title="Instagram" target="_blank" className="flex items-center flex-col shadow-md p-3 hover:-translate-y-2 transform duration-200 ease-in-out w-40 bg-indigo-100 rounded-sm">
                     <FaInstagram size={50} fill="#E1306C"/>
                     <span className="text-vivid-pink text-xl">Instagram</span>
@@ -45,31 +33,11 @@ const ContactPage = () => {
                     <span className="text-whatsapp-green text-xl">WhatsApp</span>
                 </a>
             </section>
-<<<<<<< HEAD
-            <section>
-                <form action="" className="py-24">
-                    <div>
-                        <InputDemo />
-                    </div>
-                    <div>
-                        <InputDemo />
-                    </div>
-                    <div>
-                        <TextareaDemo />
-                    </div>
-                    <div>
-                        <Button type="submit">
-                            Enviar
-                        </Button>
-                    </div>
-                </form>
-=======
             <section className="bg-dark-blue-gray w-full flex justify-center items-center flex-col">
                 <h2 className="text-light-bg lg:text-4xl max-lg:text-3xl max-sm:text-2xl font-black mt-20 pb-5">Fale Comigo</h2>
                 <p className="text-light-bg lg:text-xl max-lg:text-lg max-sm:text-base">Tem um projeto em mente ou quer apenas trocar uma ideia?</p>
                 <p className="text-light-bg lg:text-xl max-lg:text-lg max-sm:text-base">Preencha o formulário abaixo!</p>
                 <FormContact />
->>>>>>> 46ece3f ( Adicionando atualizações no Contato)
             </section>
         </>
     );

@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import { Input } from "@/components/ui/input"
-
-export function InputDemo() {
-  return <Input type="email" placeholder="Email" />
-=======
 import { Input } from "@/components/ui/input";
 import { Label } from "../ui/label";
 
@@ -22,5 +16,4 @@ export const InputDemo: React.FC<IInputDemo> = ({ type, placeholder, label, colo
       <Input {...props} required={required} type={type} placeholder={placeholder} />
     </>
   )
->>>>>>> 46ece3f ( Adicionando atualizações no Contato)
 }
