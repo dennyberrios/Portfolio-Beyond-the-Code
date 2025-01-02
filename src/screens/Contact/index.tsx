@@ -11,7 +11,7 @@ const ContactPage = () => {
         <>
             <h1 className="lg:text-4xl max-lg:text-3xl max-sm:text-2xl font-black text-deep-indigo mt-20 pb-5">Entre em Contato</h1>
             <p className="text-dark-grey lg:text-xl max-lg:text-lg max-sm:text-base mb-5">Estou sempre aberto a novas oportunidades e parcerias. Conecte-se comigo nas redes sociais ou envie uma mensagem.</p>
-            <section className="flex gap-5 py-10 mb-10">
+            <section className="flex gap-5 py-10 mb-10 flex-wrap items-center justify-center">
                 <a href="https://www.instagram.com/berrios_danny30/" title="Instagram" target="_blank" className="flex items-center flex-col shadow-md p-3 hover:-translate-y-2 transform duration-200 ease-in-out w-40 bg-indigo-100 rounded-sm">
                     <FaInstagram size={50} fill="#E1306C"/>
                     <span className="text-vivid-pink text-xl">Instagram</span>
