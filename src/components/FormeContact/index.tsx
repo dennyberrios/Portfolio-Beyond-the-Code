@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 const FormContact = () => {
     return (
-        <form className="w-[600px] py-10">
+        <form className="lg:w-[600px] max-lg:w-[500px] max-sm:w-11/12 py-10">
             <div>
                 <InputDemo
                     placeholder="Seu nome"
