@@ -3,7 +3,6 @@
 import ProjectCard from "@/components/ProjectCard";
 import TechnologyCard from "@/components/TechnologyCard";
 import BlogCard from "@/components/BlogCard";
-
 import IconCSS from "@/assets/icon/CSS.svg";
 import IconHTML from "@/assets/icon/HTML.svg";
 import IconJs from "@/assets/icon/JavaScript.svg";
@@ -68,7 +67,7 @@ const HomePage = () => {
       link: "https://plano-de-estudos.vercel.app/"
     },
     {
-      id: 3,
+      id: 4,
       img: ProjectGitCommands,
       alt: "projeto de Comandos do git.",
       title: "Comandos do git.",
@@ -92,8 +91,8 @@ const HomePage = () => {
         <h2 className="lg:text-4xl max-lg:text-4xl max-sm:text-2xl font-black text-white mb-20">Meus Projetos</h2>
         <div className="flex flex-wrap gap-5 justify-center">
           {projectGifs.map(project =>
-            <ProjectCard 
-              key={project.id} 
+            <ProjectCard
+              key={project.id}
               img={project.img}
               alt={project.alt}
               title={project.title}
@@ -241,7 +240,7 @@ const HomePage = () => {
             title="Eclipse"
           />
           <TechnologyCard
-            key={23}
+            key={24}
             image={IconIntellij}
             title="Intellij"
           />
@@ -249,17 +248,17 @@ const HomePage = () => {
         <h3 className="lg:text-2xl max-lg:text-xl max-sm:text-xl font-black text-dark-grey mb-5 mt-9">Sistemas Operacionais</h3>
         <div className="flex flex-wrap gap-5">
           <TechnologyCard
-            key={24}
+            key={25}
             image={IconLinux}
             title="Linux"
           />
           <TechnologyCard
-            key={25}
+            key={26}
             image={IconUbuntu}
             title="Ubuntu"
           />
           <TechnologyCard
-            key={26}
+            key={27}
             image={IconWindows}
             title="Windows"
           />
@@ -267,27 +266,27 @@ const HomePage = () => {
         <h3 className="lg:text-2xl max-lg:text-xl max-sm:text-xl font-black text-dark-grey mb-5 mt-9">Ferramentas de Gerenciamento e Construção</h3>
         <div className="flex flex-wrap gap-5">
           <TechnologyCard
-            key={27}
+            key={28}
             image={IconNpm}
             title="NPM"
           />
           <TechnologyCard
-            key={28}
+            key={29}
             image={IconYarn}
             title="Yarn"
           />
           <TechnologyCard
-            key={29}
+            key={30}
             image={IconVite}
             title="Vite"
           />
           <TechnologyCard
-            key={30}
+            key={31}
             image={IconNotion}
             title="Notion"
           />
           <TechnologyCard
-            key={31}
+            key={32}
             image={IconFigma}
             title="Figma"
           />
@@ -295,11 +294,11 @@ const HomePage = () => {
         <h3 className="lg:text-2xl max-lg:text-xl max-sm:text-xl font-black text-dark-grey mb-5 mt-9">Metodologias e Boas Práticas</h3>
         <div className="flex flex-wrap gap-5">
           <TechnologyCard
-            key={32}
+            key={33}
             title="Kanban"
           />
           <TechnologyCard
-            key={33}
+            key={34}
             title="Métodos Ágeis"
           />
         </div>
@@ -308,22 +307,22 @@ const HomePage = () => {
         <h2 className="lg:text-4xl max-lg:text-3xl max-sm:text-2xl font-black text-light-blue mb-5">Skills em Estudos</h2>
         <div className="flex flex-wrap gap-5">
           <TechnologyCard
-            key={34}
+            key={35}
             image={IconNode}
             title="Node.js"
           />
           <TechnologyCard
-            key={35}
+            key={36}
             image={IconJava}
             title="Java"
           />
           <TechnologyCard
-            key={36}
+            key={37}
             image={IconMysql}
             title="MYSQL"
           />
           <TechnologyCard
-            key={37}
+            key={38}
             image={IconTs}
             title="TypeScript"
           />
@@ -333,42 +332,42 @@ const HomePage = () => {
         <h2 className="lg:text-4xl max-lg:text-3xl max-sm:text-2xl font-black text-deep-indigo text-center mb-5">Blog</h2>
         <div className="flex flex-wrap gap-5 justify-center">
           <BlogCard
-            key={1}
+            key={39}
             title="Título do Post 1"
             description="Resumo do conteúdo do primeiro post, falando sobre tecnologias ou tendências do momento."
           />
           <BlogCard
-            key={2}
+            key={40}
             title="Título do Post 2"
             description="Resumo do conteúdo do segundo post, abordando um tema relevante na área de desenvolvimento."
           />
           <BlogCard
-            key={2}
+            key={41}
             title="Título do Post 2"
             description="Resumo do conteúdo do segundo post, abordando um tema relevante na área de desenvolvimento."
           />
           <BlogCard
-            key={2}
+            key={42}
             title="Título do Post 2"
             description="Resumo do conteúdo do segundo post, abordando um tema relevante na área de desenvolvimento."
           />
           <BlogCard
-            key={2}
+            key={43}
             title="Título do Post 2"
             description="Resumo do conteúdo do segundo post, abordando um tema relevante na área de desenvolvimento."
           />
           <BlogCard
-            key={2}
+            key={44}
             title="Título do Post 2"
             description="Resumo do conteúdo do segundo post, abordando um tema relevante na área de desenvolvimento."
           />
           <BlogCard
-            key={2}
+            key={45}
             title="Título do Post 2"
             description="Resumo do conteúdo do segundo post, abordando um tema relevante na área de desenvolvimento."
           />
           <BlogCard
-            key={2}
+            key={46}
             title="Título do Post 2"
             description="Resumo do conteúdo do segundo post, abordando um tema relevante na área de desenvolvimento."
           />
