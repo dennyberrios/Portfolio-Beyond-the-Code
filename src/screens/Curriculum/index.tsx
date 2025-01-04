@@ -22,7 +22,6 @@ import TechnicalMastery from "@/components/TechnicalMastery";
 import CurriculoPgOne from '@/assets//img/curriculo/1.png';
 import CurriculoPgTwo from '@/assets//img/curriculo/2.png';
 import CurriculoPgThree from '@/assets//img/curriculo/3.png';
-import { Button } from "@/components/ui/button";
 import { CarouselDemo } from "@/components/Carousel";
 
 const CurriculumPage = () => {
@@ -36,20 +35,24 @@ const CurriculumPage = () => {
     return (
         <>
             <section className="bg-dodger-blue w-full px-5 py-20">
-                <h2 className="lg:text-4xl max-lg:text-3xl max-sm:text-2xl font-black text-white text-center mb-10">Dominnio tecnico</h2>
+                <h2 className="lg:text-4xl max-lg:text-3xl max-sm:text-2xl font-black text-white text-center mb-10">Domínio técnico</h2>
                 <div className="flex items-start gap-12 justify-center flex-wrap relative">
                     <div className="lg:w-[35rem] max-lg:w-[35rem] md:w-[35rem] mx-12 flex flex-col items-center">
                         <CarouselDemo curriculoSlides={curriculoSlides} />
-                        <Button className="mt-5 font-semibold lg:text-xl max-lg:text-xl max-md:text-base max-sm:text-sm bg-tomato-red hover:bg-golden-yellow hover:text-dodger-blue transform duration-200 ease-in-out">Baixar PDF</Button>
+                        <a
+                            className="mt-5 font-semibold lg:text-xl text-light-bg max-lg:text-xl max-md:text-base max-sm:text-sm bg-tomato-red hover:bg-golden-yellow hover:text-dodger-blue transform duration-200 ease-in-out py-2 px-4 rounded-md"
+                            href={"/curriculo/Curriculo-Profissional-Danny-Berrios.pdf"}
+                            download="Curriculo-Danny-Berrios.pdf"
+                        >Baixar PDF</a>
                     </div>
                     <div className="flex flex-wrap gap-5 justify-center lg:w-[30rem] max-lg:w-[30rem] max-md:w-4/5">
                         <TechnicalMastery image={IconHTML} description="HTML" key={1} progressBar={96} />
                         <TechnicalMastery image={IconCSS} description="CSS" key={2} progressBar={96} />
                         <TechnicalMastery image={IconJs} description="JavaScript" key={3} progressBar={90} />
                         <TechnicalMastery image={IconTs} description="TypeScript" key={4} progressBar={60} />
-                        <TechnicalMastery image={IconNode} description="Node.js" key={5} progressBar={48} />
-                        <TechnicalMastery image={IconJava} description="Java" key={6} progressBar={30} />
-                        <TechnicalMastery image={IconMysql} description="Mysql" key={7} progressBar={64} />
+                        <TechnicalMastery image={IconNode} description="Node.js" key={5} progressBar={30} />
+                        <TechnicalMastery image={IconJava} description="Java" key={6} progressBar={20} />
+                        <TechnicalMastery image={IconMysql} description="Mysql" key={7} progressBar={45} />
                         <TechnicalMastery image={IconReact} description="React" key={8} progressBar={90} />
                         <TechnicalMastery image={IconNext} description="Next" key={9} progressBar={80} />
                         <TechnicalMastery image={IconStyledComponents} description="Styled-components" key={10} progressBar={90} />
