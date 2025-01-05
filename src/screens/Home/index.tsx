@@ -34,47 +34,27 @@ import IconFigma from "@/assets/icon/Figma-Dark.svg";
 import IconAxios from "@/assets/icon/axios.svg";
 import IconJwt from "@/assets/icon/jwt.svg";
 import IconIntellij from "@/assets/icon/intellij.svg";
-import ProjectCarPolice from "@/assets/gifs/viatura-da-policia.gif";
-import ProjectPost from "@/assets/gifs/poste.gif";
-import ProjectStudyPlan from "@/assets/img/plano-de-estudos.png";
-import ProjectGitCommands from "@/assets/img/comandos-do-git.png";
+import { useContext, useEffect, useState } from "react";
+import { userContext } from "@/context";
+
+interface DataProject {
+  id?: number
+  title?: string
+  img?: string
+  alt?: string
+  description?: string
+  link?: string
+}
 
 const HomePage = () => {
+  const contextData = useContext(userContext);
+  const [loading, setLoading] = useState(true);
 
-  const projectGifs = [
-    {
-      id: 1,
-      img: ProjectCarPolice,
-      alt: "Projeto de carro policial",
-      title: "Carro Policial",
-      description: "Biblioteca JavaScript para construir interfaces de usuário dinâmicas.",
-      link: "https://viatura-da-policia.vercel.app/"
-    },
-    {
-      id: 2,
-      img: ProjectPost,
-      alt: "Projecto de poste animado",
-      title: "Poste Eletrico",
-      description: "Biblioteca JavaScript para construir interfaces de usuário dinâmicas.",
-      link: "https://poste.vercel.app/"
-    },
-    {
-      id: 3,
-      img: ProjectStudyPlan,
-      alt: "projeto de Plano de Estudos",
-      title: "Plano de Estudos",
-      description: "Biblioteca JavaScript para construir interfaces de usuário dinâmicas.",
-      link: "https://plano-de-estudos.vercel.app/"
-    },
-    {
-      id: 4,
-      img: ProjectGitCommands,
-      alt: "projeto de Comandos do git.",
-      title: "Comandos do git.",
-      description: "Biblioteca JavaScript para construir interfaces de usuário dinâmicas.",
-      link: "https://comandos-de-git.vercel.app/"
+  useEffect(() => {
+    if (contextData?.projectsData) {
+      setLoading(false);
     }
-  ]
+  }, [contextData?.projectsData]);
 
   return (
     <>
@@ -90,15 +70,19 @@ const HomePage = () => {
       <section className="bg-dodger-blue w-full text-center px-5 py-20 flex flex-col justify-center items-center">
         <h2 className="lg:text-4xl max-lg:text-4xl max-sm:text-2xl font-black text-white mb-20">Meus Projetos</h2>
         <div className="flex flex-wrap gap-5 justify-center">
-          {projectGifs.map(project =>
-            <ProjectCard
-              key={project.id}
-              img={project.img}
-              alt={project.alt}
-              title={project.title}
-              description={project.description}
-              link={project.link}
-            />
+          {loading ? (
+            <p className="text-white">Carregando projetos...</p>
+          ) : (
+            contextData?.projectsData?.map((project: DataProject) => (
+              <ProjectCard
+                key={project?.id}
+                img={project?.img}
+                alt={project?.alt}
+                title={project?.title}
+                description={project?.description}
+                link={project?.link}
+              />
+            ))
           )}
         </div>
       </section>
