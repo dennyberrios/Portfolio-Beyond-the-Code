@@ -4,6 +4,8 @@ import "./globals.css";
 import localFont from "next/font/local";
 import Header from "@/components/sideBar";
 import Footer from "@/components/Footer";
+import { UserProvider } from "@/context";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,16 +29,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={cn(
-        `min-h-screen bg-light-bg font-sans ${geistSans.variable} ${geistMono.variable} antialiased`
-      )}>
-        <Header />
-        <main className="font-arial flex justify-center items-center flex-col">
-          {children}
-        </main>
-        <Footer />
-      </body>
-    </html>
+    <UserProvider>
+      <ScrollToTop />
+      <html lang="en">
+        <body className={cn(
+          `min-h-screen bg-light-bg font-sans ${geistSans.variable} ${geistMono.variable} antialiased`
+        )}>
+          <Header />
+          <main className="font-arial flex justify-center items-center flex-col">
+            {children}
+          </main>
+          <Footer />
+        </body>
+      </html>
+    </UserProvider>
   );
 }
