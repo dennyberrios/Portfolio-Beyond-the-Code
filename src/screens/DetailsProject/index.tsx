@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import { useContext, useEffect } from "react";
 import { useState } from "react";
 import Image from "next/image";
+import Preload from "@/components/Preload";
 
 interface ProjectDetails {
     id: number;
@@ -41,22 +42,22 @@ const DetailsProjectPage = () => {
     return (
         <>
             <h1>Details Project</h1>
-            {loading ? (
-                <p>Loading...</p>
-            ) : (
-                <>
-                    {projects?.img && (<Image
-                        src={projects?.img}
-                        alt={projects?.alt || "Imagem do projeto em destaque"}
-                        width={400}
-                        height={300}
-                        priority
-                        className="w-auto h-auto"
-                    />)}
-                    <h2>{projects?.title}</h2>
-                    <p>{projects?.description}</p>
-                </>
-            )}
+            <Preload loading={loading}>
+                {projects && (
+                    <>
+                        {projects?.img && (<Image
+                            src={projects?.img}
+                            alt={projects?.alt || "Imagem do projeto em destaque"}
+                            width={400}
+                            height={300}
+                            priority
+                            className="w-auto h-auto"
+                        />)}
+                        <h2>{projects?.title}</h2>
+                        <p>{projects?.description}</p>
+                    </>
+                )}
+            </Preload>
         </>
     );
 }
