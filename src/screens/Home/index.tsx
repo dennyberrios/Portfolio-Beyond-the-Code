@@ -36,6 +36,7 @@ import IconJwt from "@/assets/icon/jwt.svg";
 import IconIntellij from "@/assets/icon/intellij.svg";
 import { useContext, useEffect, useState } from "react";
 import { userContext } from "@/context";
+import Preload from "@/components/Preload";
 
 interface DataProject {
   id?: number
@@ -69,21 +70,21 @@ const HomePage = () => {
       </section>
       <section className="bg-dodger-blue w-full text-center px-5 py-20 flex flex-col justify-center items-center">
         <h2 className="lg:text-4xl max-lg:text-4xl max-sm:text-2xl font-black text-white mb-20">Meus Projetos</h2>
+
         <div className="flex flex-wrap gap-5 justify-center">
-          {loading ? (
-            <p className="text-white">Carregando projetos...</p>
-          ) : (
-            contextData?.projectsData?.map((project: DataProject) => (
-              <ProjectCard
-                key={project?.id}
-                img={project?.img}
-                alt={project?.alt}
-                title={project?.title}
-                description={project?.description}
-                link={project?.link}
-              />
-            ))
-          )}
+          <Preload loading={loading}>
+            {contextData?.projectsData && (
+              contextData?.projectsData?.map((project: DataProject) => (
+                <ProjectCard
+                  key={project?.id}
+                  img={project?.img}
+                  alt={project?.alt}
+                  title={project?.title}
+                  description={project?.description}
+                  link={project?.link}
+                />
+              ))
+            )}</Preload>
         </div>
       </section>
       <section className="bg-light-grey w-full px-5 py-20">
