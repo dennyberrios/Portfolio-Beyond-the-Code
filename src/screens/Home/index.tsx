@@ -80,7 +80,6 @@ const HomePage = () => {
                   img={project?.img}
                   alt={project?.alt}
                   title={project?.title}
-                  description={project?.description}
                   link={project?.link}
                 />
               ))
