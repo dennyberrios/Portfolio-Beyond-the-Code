@@ -6,7 +6,6 @@ interface PProjectCard {
     img?: StaticImageData | string;
     alt?: string;
     title?: string;
-    description?: string;
     link?: string;
 }
 
@@ -14,7 +13,6 @@ const ProjectCard: React.FC<PProjectCard> = ({
     img,
     alt = "Gif do Projeto em Exibição",
     title = "Título do Projeto",
-    description = "Descrição do projeto",
     link = "/",
 }) => {
     return (
@@ -25,9 +23,11 @@ const ProjectCard: React.FC<PProjectCard> = ({
                 className="w-4/5 rounded-md -mt-5 shadow-md"
                 width={"400"}
                 height={300}
+                unoptimized
+                priority
             />)}
             <h3 className="text-white mt-7 mb-3 text-2xl font-semibold">{title}</h3>
-            <p className="text-golden-yellow">{description}</p>
+            <p className="text-golden-yellow">Descrição detalhada sobre o projeto, incluindo o propósito e o impacto.</p>
             <Button asChild className="hover:bg-golden-yellow bg-tomato-red mt-6 mb-5 w-8/12 transition duration-200 ease-in-out">
                 <Link href={link || "/"} className="hover:text-deep-indigo text-lg font-semibold transition duration-200 ease-in-out">Ver Mais</Link>
             </Button>
